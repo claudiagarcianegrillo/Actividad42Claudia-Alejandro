@@ -20,6 +20,6 @@ public class Persona {
             this.edad = edad;
         } catch (RuntimeException ex) {
             throw new IllegalArgumentException("La edad debe ser positiva", ex);
-        }        
+        }
     }
 }

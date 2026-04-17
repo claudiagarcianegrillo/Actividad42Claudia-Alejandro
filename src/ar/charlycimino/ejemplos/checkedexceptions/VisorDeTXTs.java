@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Objects;
 
 
 /**
@@ -16,8 +17,16 @@ import java.io.IOException;
  */
 public class VisorDeTXTs {
     public void mostrarTxt(String ruta) throws FileNotFoundException, IOException {
-        File elArchivo = new File(ruta);        
-        BufferedReader br = new BufferedReader(new FileReader(elArchivo));
-        System.out.println( br.readLine());
+        Objects.requireNonNull(ruta, "La ruta no puede ser null");
+
+        try (BufferedReader br = new BufferedReader(new FileReader(ruta))) {
+            String linea = br.readLine();
+
+            if (linea != null) {
+                System.out.println(linea);
+            } else {
+                System.out.println("El archivo está vacío");
+            }
+        }
     }
 }
