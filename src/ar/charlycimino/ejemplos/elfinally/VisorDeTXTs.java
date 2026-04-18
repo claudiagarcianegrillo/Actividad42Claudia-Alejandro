@@ -25,12 +25,12 @@ public class VisorDeTXTs {
             System.out.println("Error de E/S: " + e.getMessage());
             throw new RuntimeException("Error inesperado en el catch");
         } finally {
-            if (br != null) {
-                try {
+            try {
+                if (br != null){
                     br.close();
-                } catch (IOException ex) {
-                    System.out.println("No se pudo liberar el br");
                 }
+            } catch (IOException ex) {
+                System.out.println("No se pudo liberar el br");
             }
         }
     }

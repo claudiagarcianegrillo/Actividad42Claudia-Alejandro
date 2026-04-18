@@ -3,26 +3,16 @@
   <component name="CheckStyle-IDEA" serialisationVersion="2">
     <checkstyleVersion>13.4.0</checkstyleVersion>
     <scanScope>JavaOnly</scanScope>
-    <suppressErrors>true</suppressErrors>
     <copyLibs>true</copyLibs>
     <option name="thirdPartyClasspath" />
     <option name="activeLocationIds">
-      <option value="5f249126-a5ed-46f6-8388-beea3dbbd82b" />
+      <option value="bundled-google-checks" />
+      <option value="bundled-sun-checks" />
     </option>
     <option name="locations">
       <list>
         <ConfigurationLocation id="bundled-sun-checks" type="BUNDLED" scope="All" description="Sun Checks">(bundled)</ConfigurationLocation>
         <ConfigurationLocation id="bundled-google-checks" type="BUNDLED" scope="All" description="Google Checks">(bundled)</ConfigurationLocation>
-        <ConfigurationLocation id="0b17c247-129b-4c62-a0db-befb81d3d333" type="HTTP_URL" scope="All" description="Sun checks">
-          https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/resources/sun_checks.xml
-          <option name="properties">
-            <map>
-              <entry key="org.checkstyle.sun.suppressionfilter.config" value="checkstyle-suppressions.xml" />
-              <entry key="org.checkstyle.sun.suppressionxpathfilter.config" value="checkstyle-xpath-suppressions.xml" />
-            </map>
-          </option>
-        </ConfigurationLocation>
-        <ConfigurationLocation id="5f249126-a5ed-46f6-8388-beea3dbbd82b" type="LOCAL_FILE" scope="All" description="custom_checks.xml">C:\Users\Alejandro\Downloads\Actividad42Claudia-Alejandro-main\custom_checks.xml</ConfigurationLocation>
       </list>
     </option>
   </component>
